@@ -49,23 +49,14 @@ Before you use Run_All, we suggest you try Run_case_by_case to know the function
 <pre><code>
   big, char, word, longest = N_gram_info(filename, N, encode)
 </code></pre>
+* This function is for ***unsegmented*** txt files. It will use N-gram segmentaton algorithm to segment your files.
 
-1. Put your <bf>unsegmented</bf> txt files in data/Text
+1. Put your ***unsegmented*** txt files in Ngram/text
 
-2. In main(), there are several settings. You can see Run_case_by_case for their details.
-* If you don't want to run certain functions, you can # them. For example, 
+2. You can change the range of N
 <pre><code>
-  #FRD_plot(...)
-</code></pre>
-  
-* Special cases: calculate SP and fitting scaling lines. You need to # three functions.
-<pre><code>
-  #f, flu = Plot_f(...)
-  #Rf = rf(...)
-  #fit_with_cut(...)
+  for N in range(2, 5):                #run for 2-gram ~ 4-gram
 </code></pre>
 
-3. In jupyter notebook, use Cell > Run all to excute the program.
-
-4. If there is any bug, it will show in the bottom of this program. Please report us if you can not solve the bug.
+3. The remain process is the same as Tutorial for Run_All 2~4. 
 
