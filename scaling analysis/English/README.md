@@ -19,14 +19,14 @@ This tutor will teach you how to use Run_All. Before you use Run_All, we suggest
 * If you don't want to run certain functions, you can # them. For example, 
 <code>
   #FRD_plot(...)
-<code>
+</code>
 then FRD will be neglected.
   
 * Special cases: calculate SP and fitting scaling lines. You need to 
-<code>
+<pre><code>
   #f, flu = Plot_f(...)
   
   #Rf = rf(...)
   
   #fit_with_cut(...)
-<code>
+</code></pre>
