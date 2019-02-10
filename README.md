@@ -18,6 +18,8 @@ jupyter notebook
 ```
 2. Enter fake generator or scaling analysis directory for further tutoring.
 
+3. jupyter notebook tutorial https://www.dataquest.io/blog/jupyter-notebook-tutorial/
+
 ## project developers: 
 Li-Min Wang: https://github.com/godofhoe
 
