@@ -34,6 +34,38 @@ Before you use Run_All, we suggest you try Run_case_by_case to know the function
   #fit_with_cut(...)
 </code></pre>
 
-3. In jupyter notebook, Use Cell > Run all to excute the program.
+3. In jupyter notebook, use Cell > Run all to excute the program.
 
 4. If there is any bug, it will show in the bottom of this program. Please report us if you can not solve the bug.
+
+Tutorial for Run_All_Ngram
+------
+Before you use Run_All, we suggest you try Run_case_by_case to know the functionalities of each function.
+* To use Ngram analysis, you need to change 
+<pre><code>
+  big, char, word, longest = info(filename, encode)
+</code></pre>
+  to
+<pre><code>
+  big, char, word, longest = N_gram_info(filename, N, encode)
+</code></pre>
+
+1. Put your <bf>unsegmented</bf> txt files in data/Text
+
+2. In main(), there are several settings. You can see Run_case_by_case for their details.
+* If you don't want to run certain functions, you can # them. For example, 
+<pre><code>
+  #FRD_plot(...)
+</code></pre>
+  
+* Special cases: calculate SP and fitting scaling lines. You need to # three functions.
+<pre><code>
+  #f, flu = Plot_f(...)
+  #Rf = rf(...)
+  #fit_with_cut(...)
+</code></pre>
+
+3. In jupyter notebook, use Cell > Run all to excute the program.
+
+4. If there is any bug, it will show in the bottom of this program. Please report us if you can not solve the bug.
+
