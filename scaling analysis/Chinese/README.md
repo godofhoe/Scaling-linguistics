@@ -60,3 +60,10 @@ Before you use Run_All, we suggest you try Run_case_by_case to know the function
 
 3. The remain process is the same as Tutorial for Run_All 2~4. 
 
+
+```
+$scope.cookieGet = function(key){
+  $scope.cookieResult = $cookieStore.get(key);
+  console.log ($scope.cookieResult);
+}
+```
