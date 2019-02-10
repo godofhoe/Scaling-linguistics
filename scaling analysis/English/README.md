@@ -29,3 +29,5 @@ This tutor will teach you how to use Run_All. Before you use Run_All, we suggest
 </code></pre>
 
 3. In jupyter notebook, Use Cell > Run all to excute the program.
+
+4. If there is any bug, it will show in the bottom of this program. Please report us if you can not solve the bug.
