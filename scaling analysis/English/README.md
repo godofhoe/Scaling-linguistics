@@ -1,12 +1,12 @@
 A statistical tool to analyze the "scaling property" in English corpora
 ---------
-##Fitting_MLE
+## Fitting_MLE
 A teaching material of maximum likelihood estimation (MLE).
 
-##Run_case_by_case
+## Run_case_by_case
 Apply scaling analysis case by case. View this file for its details.
 
-##Run_All
+## Run_All
 Apply scaling analysis on the txt files in data/Text
 
 Tutor
