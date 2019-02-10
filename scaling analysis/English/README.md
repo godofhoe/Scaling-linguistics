@@ -25,8 +25,6 @@ then FRD will be neglected.
 * Special cases: calculate SP and fitting scaling lines. You need to 
 <pre><code>
   #f, flu = Plot_f(...)
-  
   #Rf = rf(...)
-  
   #fit_with_cut(...)
 </code></pre>
