@@ -11,7 +11,7 @@ Apply scaling analysis on the txt files in data/Text
 
 Tutorial
 ------
-This tutor will teach you how to use Run_All. Before you use Run_All, we suggest you try Run_case_by_case to know the functionalities of each function.
+This tutorial will teach you how to use Run_All. Before you use Run_All, we suggest you try Run_case_by_case to know the functionalities of each function.
 
 1. Put your segmented txt files in data/Text
 
