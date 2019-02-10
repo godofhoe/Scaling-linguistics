@@ -4,7 +4,7 @@
 A tool to plot A-GLMV relationship, where A is accuracy of a segmention algorithm and GLMV is our index.
 Now we have Chinese version
 
-#### Prerequisit
+## Prerequisit
 prepare several segmented corpora (for the same novel, book, ...etc) with different algorithms
 Encoding: utf-8
 Some suggest algorithms:
@@ -25,14 +25,14 @@ Sometime your raw data has been segmented, Cut-space tool can help you recovery 
 Tutor
 -------------------
 This tutor will teach you how to finish an A-GLMV plot.
-### Prerequisit
+## Prerequisit
 prepare several segmented corpora (for the same novel, book, ...etc) with different algorithms
 
 There are two version program: Case_by_case and Run_all
 
 The former is used to run case by case and see details of program, the beginner is suggested to use this program first.
 
-The following case take Chinese for example:
+## Take Chinese for example:
 
 1. To complete the A-GLMV plot, you need excel table in the form of "readme of Run_case_by_case.png"
 
