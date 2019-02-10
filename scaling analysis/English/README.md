@@ -27,3 +27,5 @@ This tutor will teach you how to use Run_All. Before you use Run_All, we suggest
   #Rf = rf(...)
   #fit_with_cut(...)
 </code></pre>
+
+3. In jupyter notebook, Use Cell > Run all to excute the program.
