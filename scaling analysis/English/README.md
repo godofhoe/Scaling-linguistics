@@ -17,11 +17,11 @@ This tutor will teach you how to use Run_All. Before you use Run_All, we suggest
 
 2. In main(), there are several settings. You can see Run_case_by_case for their details.
 * If you don't want to run certain functions, you can # them. For example, 
-<code>
+<pre><code>
   #FRD_plot(...)
-</code>
+</code></pre>
   
-* Special cases: <br>calculate SP and fitting scaling lines<\br>. You need to # three functions.
+* Special cases: calculate SP and fitting scaling lines. You need to # three functions.
 <pre><code>
   #f, flu = Plot_f(...)
   #Rf = rf(...)
