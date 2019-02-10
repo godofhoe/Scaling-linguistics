@@ -23,9 +23,9 @@ Before you use Run_All, we suggest you try Run_case_by_case to know the function
 
 2. In main(), there are several settings. You can see Run_case_by_case for their details.
 * If you don't want to run certain functions, you can # them. For example, 
-'''
+```
   #FRD_plot(...)
-'''
+```
   
 * Special cases: calculate SP and fitting scaling lines. You need to # three functions.
 <pre><code>
