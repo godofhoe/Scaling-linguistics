@@ -20,10 +20,8 @@ This tutor will teach you how to use Run_All. Before you use Run_All, we suggest
 <code>
   #FRD_plot(...)
 </code>
-
-then FRD will be neglected.
   
-* Special cases: calculate SP and fitting scaling lines. You need to 
+* Special cases: <br>calculate SP and fitting scaling lines<\br>. You need to # three functions.
 <pre><code>
   #f, flu = Plot_f(...)
   #Rf = rf(...)
