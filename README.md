@@ -12,7 +12,10 @@ Anaconda 3, you can download it from https://www.anaconda.com/download/. I sugge
 
 ## Tutor
 
-1. Open jupyter notebook. If you have added anaconda as Environment variable, use cmd > jupyter notebook.
+1. Open jupyter notebook. If you have added anaconda as Environment variable, use cmd > 
+```
+jupyter notebook
+```
 2. Enter fake generator or scaling analysis directory for further tutor.
 
 ## project developers: 
