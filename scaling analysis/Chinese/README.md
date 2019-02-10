@@ -28,11 +28,11 @@ Before you use Run_All, we suggest you try Run_case_by_case to know the function
 ```
   
 * Special cases: calculate SP and fitting scaling lines. You need to # three functions.
-<pre><code>
+```
   #f, flu = Plot_f(...)
   #Rf = rf(...)
   #fit_with_cut(...)
-</code></pre>
+```
 
 3. In jupyter notebook, use Cell > Run all to excute the program.
 
@@ -42,21 +42,21 @@ Tutorial for Run_All_Ngram
 ------
 Before you use Run_All, we suggest you try Run_case_by_case to know the functionalities of each function.
 * To use Ngram analysis, you need to change 
-<pre><code>
+```
   big, char, word, longest = info(filename, encode)
-</code></pre>
+```
   to
-<pre><code>
+```
   big, char, word, longest = N_gram_info(filename, N, encode)
-</code></pre>
+```
 * This function is for ***unsegmented*** txt files. It will use N-gram segmentaton algorithm to segment your files.
 
 1. Put your ***unsegmented*** txt files in Ngram/text
 
 2. You can change the range of N
-<pre><code>
+```
   for N in range(2, 5):                #run for 2-gram ~ 4-gram
-</code></pre>
+```
 
 3. The remain process is the same as Tutorial for Run_All 2~4. 
 
