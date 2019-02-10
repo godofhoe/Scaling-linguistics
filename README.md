@@ -10,13 +10,13 @@ Tools of scaling analysis, including English and Chinese version, A-GLMV plot, C
 
 Anaconda 3, you can download it from https://www.anaconda.com/download/. I suggest user add it as Environment variable.
 
-## Tutor
+## Tutorial
 
 1. Open jupyter notebook. If you have added anaconda as Environment variable, use cmd > 
 ```
 jupyter notebook
 ```
-2. Enter fake generator or scaling analysis directory for further tutor.
+2. Enter fake generator or scaling analysis directory for further tutoring.
 
 ## project developers: 
 Li-Min Wang: https://github.com/godofhoe
