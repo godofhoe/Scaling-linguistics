@@ -22,7 +22,8 @@ Tool to study Chinese/English corpora
 ### Cut-space
 Sometime your raw data has been segmented, Cut-space tool can help you recovery your data to un-segmented situation.
 
-## Tutor
+Tutor
+-------------------
 This tutor will teach you how to finish an A-GLMV plot.
 ### Prerequisit
 prepare several segmented corpora (for the same novel, book, ...etc) with different algorithms
