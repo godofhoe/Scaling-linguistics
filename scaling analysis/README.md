@@ -30,7 +30,7 @@ The former is used to run case by case and see details of program, the beginner 
 
 ## Take Chinese for example:
 
-1. To complete the A-GLMV plot, you need excel table in the form of "readme of Run_case_by_case.png"
+1. To complete the A-GLMV plot, you need excel table in the form of "**readme of Run_case_by_case.png**"
 
 2. Put your segmented corpora in "Chinese/data/Text"
 
