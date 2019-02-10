@@ -3,7 +3,14 @@
 ### A-GLMV plot
 A tool to plot A-GLMV relationship, where A is accuracy of a segmention algorithm and GLMV is our index.
 Now we have Chinese version
+### Chinese/English
+Tool to study Chinese/English corpora
+### Cut-space
+Sometime your raw data has been segmented, Cut-space tool can help you recovery your data to un-segmented situation.
 
+Tutor
+-------------------
+This tutor will teach you how to finish an A-GLMV plot.
 ## Prerequisit
 prepare several segmented corpora (for the same novel, book, ...etc) with different algorithms
 Encoding: utf-8
@@ -17,18 +24,7 @@ Some suggest algorithms:
 2. English:
 * https://github.com/henchc/syllabipy
 
-### Chinese/English
-Tool to study Chinese/English corpora
-### Cut-space
-Sometime your raw data has been segmented, Cut-space tool can help you recovery your data to un-segmented situation.
-
-Tutor
--------------------
-This tutor will teach you how to finish an A-GLMV plot.
-## Prerequisit
-prepare several segmented corpora (for the same novel, book, ...etc) with different algorithms
-
-There are two version program: Case_by_case and Run_all
+### There are two version program: Case_by_case and Run_all
 
 The former is used to run case by case and see details of program, the beginner is suggested to use this program first.
 
