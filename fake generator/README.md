@@ -8,3 +8,7 @@ These five generator will generate fake corpra whose word obey expotential, Zipf
 Generate fake corpous and set its M, the upper bound of $link$.
 ### David_Wang_fake
 Compose N-gram corpus, B.txt, by shuffling words in A.txt into characters and randomly group them into new N-gram words.
+
+-----
+roc2.txt is word bank of Sinica Corpus
+-----
