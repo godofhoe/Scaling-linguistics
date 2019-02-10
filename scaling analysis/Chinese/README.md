@@ -17,7 +17,7 @@ Caculate the accuracy of segmentation algorithms.
 
 Tutor for Run_All
 ------
-<font color=bule>Run_All</font>
+<font color="bule">Run_All<font>
 Before you use Run_All, we suggest you try Run_case_by_case to know the functionalities of each function.
 
 1. Put your segmented txt files in data/Text
