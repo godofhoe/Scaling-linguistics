@@ -9,7 +9,7 @@ Apply scaling analysis case by case. View this file for its details.
 ## Run_All
 Apply scaling analysis on the txt files in data/Text
 
-Tutor
+Tutorial
 ------
 This tutor will teach you how to use Run_All. Before you use Run_All, we suggest you try Run_case_by_case to know the functionalities of each function.
 
