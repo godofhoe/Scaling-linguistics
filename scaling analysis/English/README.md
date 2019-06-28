@@ -1,22 +1,35 @@
-# a statistical tool to analyze the "scaling property" in Chinese courpus
-Version: 2018_April_18
----------
-###Counting collocations for each character 
-###Counting links for each word 
----------
-          
- * a funciton counting the number of collocations in a script, adding a new column called "#collocations" to the data frame char, and saving the result to the column.
- * download count_col.py to your desktop, save it to the same folder where the .ipynb files exist. 
- * see fake_generate_LogNormal_crazy_version.ipynb for examples.
- * download count_col.py to your desktop, save it to the same folder where the .ipynb files exist.
- * don't forget to put 
- 'from count_col import count_col'
- to the top of your code!
- 
-count_links(word[,feaure])
-  * input: word (pandas data frames)
-  * a funciton counting how many links in a script, adding a new column called "#links" to the data frame word, and saving the result to that column.
-  * count_links has been added to count.py file.
-  * see count_link_frog.ipynb for examples.
+A statistical tool to analyze the "scaling property" in English corpora
 
+---------
+## Fitting_MLE
+A teaching material of maximum likelihood estimation (MLE).
+
+## Run_case_by_case
+Apply scaling analysis case by case. View this file for its details.
+
+## Run_All
+Apply scaling analysis on the txt files in data/Text
+
+Tutorial for Run_All
+------
+Before you use Run_All, we suggest you try Run_case_by_case to know the functionalities of each function.
+
+1. Put your segmented txt files in data/Text
+
+2. In main(), there are several settings. You can see Run_case_by_case for their details.
+* If you don't want to run certain functions, you can # them. For example, 
+```python
+  #FRD_plot(...)
+```
+
+* Special cases: calculate SP and fitting scaling lines. You need to # three functions.
+```python
+  #f, flu = Plot_f(...)
+  #Rf = rf(...)
+  #fit_with_cut(...)
+```
+
+3. In jupyter notebook, use Cell > Run all to excute the program.
+
+4. If there is any bug, it will show in the bottom of this program. Please report us if you can not solve the bug.
  
