@@ -35,7 +35,7 @@ def count_col(pdframe1, pdframe2, feature1 = "word", feature2 = "syl", feature3 
         collocation[c] = 0
         for w in word_array:
             t = w.split('-')
-            if c in set(t): #ex: '你' in '你好', but '你' not in '哈囉'
+            if c in set(t): #ex: 'A' in 'AB', but 'A' not in 'BC'
                 collocation[c] += 1
 
     syl_num_collocations_array = np.array([], dtype = 'int16' )
@@ -55,7 +55,7 @@ def count_col(pdframe1, pdframe2, feature1 = "word", feature2 = "syl", feature3 
         t = w.split('-')
         for c in set(t):
             #If we don't use set(w) here, the links will be overcount. 
-            #ex: link('哈哈') = collocation('哈') but not 2*collocation('哈')
+            #ex: link('AA') = collocation('A') but not 2*collocation('A')
             link[w] += collocation[c]
     
     link_num_array = np.array([], dtype = 'int16')

@@ -12,6 +12,7 @@ The core function of this module is info(file_name, encode = "UTF-8")
 
 import pandas as pd
 import numpy as np
+import math
 import matplotlib.pyplot as plt 
 import textwrap
 import sys
@@ -174,6 +175,7 @@ def transfrom_wordlist_into_syllist(word_list):
         syl_list.extend(word.split('-'))
         
     return syl_list
+
 '''
 def transfrom_wordlist_into_Ngram_syllist(word_list, N):
     """Divide each words in the word_list into N-gram syllables, order reserved.
@@ -303,7 +305,7 @@ def info(file_name, encode = "UTF-8"):
     pd_word= produce_data_frame(word_list, word_freq, word_seq,"word")
     another_word = pd_word.copy()
     pd_syl= produce_data_frame(syl_list, syl_freq, syl_seq,"syl")
-    data_frame = produce_wordRank_sylRank_frame(pd_word,pd_syl,longest_L)
+    data_frame = produce_wordRank_sylRank_frame(pd_word, pd_syl, longest_L)
     print("Successfully build data frames!")
     
     return data_frame, pd_syl, another_word, longest_L
@@ -362,7 +364,7 @@ def N_gram_info(file_name, N, encode = "UTF-8"):
     data_frame = produce_wordRank_sylRank_frame(pd_word,pd_syl,longest_L)
     print("Successfully build data frames!")
     
-    return data_frame, pd_syl, another_word, longest_L
+    return data_frame, pd_syl, another_word, longest_L    
 
 def geometric_sequence(word, syl):
     '''give geometric sequence {Hn} and {Vn}
@@ -449,10 +451,13 @@ def draw_RRD_plot(big, word, syl, longest, name, V, H, need_line = 'Y', number_o
             plt.plot(x_range, y_const) #plot y=H[i] on RRD plot
             plt.plot(x_const, y_range) #plot x=V[i] on RRD plot   
     
-    
+    cooridnate = []
     for i in range(longest):
         str_position = [i + 1 for i in range(len(big[str(i) + "th_syl_rank"]))] #position starting form 1 not 0
         plt.plot(str_position, big[str(i) + "th_syl_rank"], 'o', markersize=3, color = Color)
+        for j in range(len(str_position)):
+            if  math.isnan(big.loc[j, str(i) + "th_syl_rank"]) == False:
+                cooridnate.append([str_position[j], big.loc[j, str(i) + "th_syl_rank"]])
     
     plt.xlabel('word', size = 15)
     plt.ylabel('syllable', size = 15)
@@ -462,17 +467,17 @@ def draw_RRD_plot(big, word, syl, longest, name, V, H, need_line = 'Y', number_o
     if (SP == 'T') and (FORMAT == 'png' or 'pdf' or 'ps' or 'eps' or 'svg'):
         fig.savefig('RRD of ' + name + '.' + FORMAT, dpi=1000, format = FORMAT) #adjust dpi if you want the figure more clear
     plt.show()
-    
+    return cooridnate
     
 
 
-def draw_density_plot(data, slice_number, feature = "0th_syl_rank" ):
-    """input a pandas data frame, draw a density diagram of feature column, slice
-    the diagram into slice_number equal pieces. 
+def draw_density_plot(cooridnate_x, cooridnate_y, slice_number):
+    """input cooridnate of datapoints
+       draw a density diagram and slice it into slice_number pieces. 
     """
-    xx = data[feature]
-    yy = np.arange(len(xx))
-    plt.hist2d(yy,xx, slice_number, cmap = plt.cm.jet)
+    xx = cooridnate_x
+    yy = cooridnate_y
+    plt.hist2d(xx, yy, slice_number, cmap = plt.cm.jet)
     plt.colorbar()
     
     
