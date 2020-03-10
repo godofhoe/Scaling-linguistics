@@ -2,7 +2,7 @@
 """
 Spyder Editor
 
-@author  shan, gmking
+@author  gmking, shan
 
 This module is use to calculate the collocations and links of Chinese.
 """

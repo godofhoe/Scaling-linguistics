@@ -2,7 +2,7 @@
 """
 Created on Fri Dec 30 17:02:47 2016
 
-@author: gmking, shan
+@author: shan, gmking
 
 This module is used to construct a dataframe with all statistical information we need.
 The core function of this module is info(file_name, encode = "UTF-8")
@@ -452,12 +452,12 @@ def draw_RRD_plot(big, word, syl, longest, name, V, H, need_line = 'Y', number_o
             plt.plot(x_const, y_range) #plot x=V[i] on RRD plot   
     
     cooridnate = []
+    str_position = [i + 1 for i in range(len(big["0th_syl_rank"]))] #position starting form 1 not 0
     for i in range(longest):
-        str_position = [i + 1 for i in range(len(big[str(i) + "th_syl_rank"]))] #position starting form 1 not 0
         plt.plot(str_position, big[str(i) + "th_syl_rank"], 'o', markersize=3, color = Color)
         for j in range(len(str_position)):
             if  math.isnan(big.loc[j, str(i) + "th_syl_rank"]) == False:
-                cooridnate.append([str_position[j], big.loc[j, str(i) + "th_syl_rank"]])
+                cooridnate.append((str_position[j], int(big.loc[j, str(i) + "th_syl_rank"])))
     
     plt.xlabel('word', size = 15)
     plt.ylabel('syllable', size = 15)
