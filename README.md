@@ -25,7 +25,7 @@ Li-Min Wang: https://github.com/godofhoe
 
 Shan-Jyun Wu: https://github.com/shanjgit
 
-NTHU-physics 510A group, leader: Tzay-ming Hong, http://phys.web.nthu.edu.tw/files/14-1275-108037,r3581-1.php?Lang=en
+NTHU-physics 510A group, leader: Prof. Tzay-ming Hong, http://phys.web.nthu.edu.tw/files/14-1275-108037,r3581-1.php?Lang=en
 
 ## project history
 https://github.com/shanjgit/Scaling/commits/master
