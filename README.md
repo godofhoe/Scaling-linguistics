@@ -1,6 +1,6 @@
 # Scaling-linguistics
 
-This repository is design to use scaling analysis in linguistics. Our paper:
+This repository is design to use scaling analysis in linguistics. Our paper:https://arxiv.org/abs/2005.02087
 ### fake generator
 We provide serveral fake corpus generator, you can launch these programs with ipython notebook
 ### scaling analysis
